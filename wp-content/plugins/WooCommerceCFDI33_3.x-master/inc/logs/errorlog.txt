@@ -1,0 +1,62 @@
+*   Trying 72.249.139.212...
+* TCP_NODELAY set
+* Connected to factura.com (72.249.139.212) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /Applications/MAMP/Library/OpenSSL/cert.pem
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: OU=Domain Control Validated; OU=PositiveSSL Wildcard; CN=*.factura.com
+*  start date: Jul 23 00:00:00 2019 GMT
+*  expire date: Jul 22 23:59:59 2020 GMT
+*  subjectAltName: host "factura.com" matched cert's "factura.com"
+*  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo RSA Domain Validation Secure Server CA
+*  SSL certificate verify ok.
+> GET /api/v3/cfdi33/list HTTP/1.1
+Host: factura.com
+Accept: */*
+Content-Type: application/json
+F-PLUGIN: b2b0f61828f85dedb83c08e6d07cf71ce964a99c
+F-API-KEY:JDJ5JDEwJGdoSnE5YkR4cDFJcXE2TDFteExQOGVBcC9YZkx5SWUxRXhFYXNGUERyUzI5RlRsbkM2aU1h
+F-SECRET-KEY:JDJ5JDEwJE5CL2dkRi92VlFERlV3LklRSGJJV3U2ZGM5TllBVzN1dDI4UG90MFBqWS5VLnh1R2J6TC9X
+
+< HTTP/1.1 200 OK
+< Date: Wed, 27 May 2020 19:23:19 GMT
+< Server: Apache/2
+< Cache-Control: no-cache
+< Set-Cookie: laravel_session=eyJpdiI6IlVkWkpEMFNFU3B1Yk1JOUhEUVplaXc9PSIsInZhbHVlIjoiSm5WRGI0eStiUmRmN05ZMXpVOE1NMUE4a1wvMDBjNVQ4U3ltb3hacUVtUlgxV2g5dTZOOFhcLzJCR2Qxdks1TXg4VnR2T29xdmxMTjZ0Ym1zMWtpQk1DZz09IiwibWFjIjoiNzc4ZGY3YWI3MmRiZGI1Y2I0MDNkNTU2Y2ViNzYxZWZkOGNlYzEzN2RhNTUxMThhMjVlYTBmMTEyYjdkZjI5OCJ9; expires=Wed, 27-May-2020 21:23:19 GMT; Max-Age=7200; path=/; secure; httponly
+< Strict-Transport-Security: max-age=31536000;
+< Upgrade: h2,h2c
+< Connection: Upgrade
+< Vary: Accept-Encoding,User-Agent
+< X-XSS-Protection: 1
+< X-Content-Type-Options: nosniff
+< Transfer-Encoding: chunked
+< Content-Type: application/json
+< 
+* Connection #0 to host factura.com left intact
+*   Trying 174.136.53.195...
+* TCP_NODELAY set
+* Connected to devfactura.in (174.136.53.195) port 80 (#0)
+> GET /api/v1/clients/EDI0810152N2 HTTP/1.1
+Host: devfactura.in
+Accept: */*
+Content-Type: application/json
+F-PLUGIN: b2b0f61828f85dedb83c08e6d07cf71ce964a99c
+F-API-KEY:JDJ5JDEwJFEzWUNhL2djVUtKMDdFbHBObUM0UWVVSXRUWGtyczYxN29BSUl6eHZkeXE0MmRydXRvUVJ5
+F-SECRET-KEY:JDJ5JDEwJFduRy5DMTVDQUZOOHJycE8wNFZnT09BeldWTXFzaGxYZzhpODU5cWtsdlpYWWhzUlJmREwy
+
+< HTTP/1.1 200 OK
+< Date: Wed, 27 May 2020 19:29:42 GMT
+< Server: Apache/2
+< X-Powered-By: PHP/5.6.31
+< Cache-Control: no-cache
+< Set-Cookie: laravel_session=eyJpdiI6IlRLQXk3YlwvVlBES01XKytYQ0ZScG5nPT0iLCJ2YWx1ZSI6Ikx4M0J2QzBrcElrYlAzdm5SR3lxNWRBUTdFZjZUXC9QNWhiWDBCQmdVS1FVV2lhZ1dtM3UxTWhwWXVTTkRJMkVQUlwvemlcL3RkSVVSbjhnTGF6Z05paUxnPT0iLCJtYWMiOiI5ZjFjMTFlOGZlNTA1MWQ3MDg5NzkxNDkxYTJiYTAyODc2ZWNlMWJlYmZlNDViZjJlOGNiYmNhOGVlNDA0ODZlIn0%3D; expires=Wed, 27-May-2020 21:29:42 GMT; Max-Age=7200; path=/; httponly
+< Vary: Accept-Encoding,User-Agent
+< Transfer-Encoding: chunked
+< Content-Type: application/json
+< 
+* Connection #0 to host devfactura.in left intact

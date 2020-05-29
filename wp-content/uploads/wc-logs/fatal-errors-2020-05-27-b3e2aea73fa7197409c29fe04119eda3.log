@@ -1,0 +1,11 @@
+2020-05-27T19:29:21+00:00 CRITICAL Uncaught Error: Call to a member function get_order_number() on boolean in /Applications/MAMP/htdocs/dictamenmedico/wp-content/plugins/WooCommerceCFDI33_3.x-master/inc/commerce-helper.php:14
+Stack trace:
+#0 /Applications/MAMP/htdocs/dictamenmedico/wp-content/plugins/WooCommerceCFDI33_3.x-master/inc/factura-wrapper.php(488): CommerceHelper::getOrderById('234234')
+#1 /Applications/MAMP/htdocs/dictamenmedico/wp-content/plugins/WooCommerceCFDI33_3.x-master/facturacom.php(538): FacturaWrapper::getOrder('234234')
+#2 /Applications/MAMP/htdocs/dictamenmedico/wp-includes/class-wp-hook.php(287): step_one_callback('')
+#3 /Applications/MAMP/htdocs/dictamenmedico/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#4 /Applications/MAMP/htdocs/dictamenmedico/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /Applications/MAMP/htdocs/dictamenmedico/wp-admin/admin-ajax.php(190): do_action('wp_ajax_nopriv_...')
+#6 {main}
+  thrown en /Applications/MAMP/htdocs/dictamenmedico/wp-content/plugins/WooCommerceCFDI33_3.x-master/inc/commerce-helper.php en la línea 14
+
